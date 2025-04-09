@@ -61,7 +61,7 @@
     // Fetch and display all registrations
     async function updateRegistrationsList() {
         try {
-            const response = await fetch('http://localhost:3000/api/registrations');
+            const response = await fetch('https://volleyball-registration.onrender.com/api/registrations');
             const registrations = await response.json();
 
             registrationsList.innerHTML = '<h2>Current Registrations</h2>';
